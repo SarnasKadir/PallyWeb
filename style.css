@@ -512,3 +512,9 @@ footer {
 	max-width: 100%;
 	clear: both;
 }
+
+.toTop{
+	width:48px;
+	height:48px;
+	background-color:red;
+}
