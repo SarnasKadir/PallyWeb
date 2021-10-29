@@ -1,155 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="images/pw-logo.png" type="image/x-icon" />
+        <title>Home / Pally Web</title>
+        <meta name="description" content="My portfolio " />
+        <meta name="keywords" content="HTML, CSS and JavaScripts" />
+        <meta name="author" content="Sarnas Kadir" />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .homePageLink {
+                color: lime;
+                font-weight: bold;
+            }
+        </style>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body class="light_Mode" id="bodyId">
+        <header>
+            <div class="name-logo">Pally Web <span class="pw-logo">PW</span></div>
+        </header>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="images/pw-logo.png" type="image/x-icon">
-<title>Home / Pally Web</title>
-<meta name="description" content="My portfolio ">
-<meta name="keywords" content="HTML, CSS and JavaScripts">
-<meta name="author" content="Sarnas Kadir">
-<link rel="stylesheet" href="style.css">
-<style>.homePageLink{color:lime; font-weight:bold;}</style>
-<script src="scripts/jquery.min.js"></script>
-<script src="scripts/scripts.js"></script>
+        <div class="top-banner" id="navbar">
+            <div class="top-banner-inner">
+                <div class="menu-button-holder">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                    <span class="bar3"></span>
+                </div>
+                <button class="darkBTN">Dark mode</button><button class="lightBTN">Light mode</button>
 
-</head>
-<body class="light_Mode" id="bodyId">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="homePageLink">Home</a></li>
+                        <li><a href="aboutme.html" class="aboutMeLink">About me</a></li>
+                        <li><a href="contactme.html" class="contactMeLink">Contact me</a></li>
+                        <li><a href="tools.html" class="toolsLink">Tools</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
+        <div class="webpage-wrapper">
+            <main class="main-class">
+                <div class="article-holder">
+                    <div class="widget-holder">
+                        <div class="widget">
+                            <!-- buttons for hide and show sidebar -->
+                            <button class="expandArticleArea">Expand Article Area?</button><button class="showSideBar">Show Side Bar?</button>
 
-<header><div class="name-logo"> Pally Web <span class="pw-logo">PW</span></div></header>
+                            <!-- Article content -->
+                            <article>
+                                <h1 class="article-title">Hello and Welcome!</h1>
+                                <p>It is here that I log my development within the web development that I have passion for</p>
 
-<div class="top-banner" id="navbar"><div class="top-banner-inner">
+                                <h2 class="sub-title">Colormind</h2>
+                                <p>
+                                    is a color scheme generator that uses deep learning <br />
+                                    <a href="http://colormind.io/" target="_blank" rel="noopener noreferrer" title="Colormind"> http://colormind.io/</a>
+                                </p>
 
-<div class="menu-button-holder">
-<span class="bar1"></span>
-<span class="bar2"></span>
-<span class="bar3"></span>
-</div>
-<button class="darkBTN">Dark mode</button><button class="lightBTN">Light mode</button> 
+                                <h2 class="sub-title">Deque Color Contrast Analyzer</h2>
+                                <p>
+                                    is a text and text background color contrast Ratio <br />
+                                    <a href="https://dequeuniversity.com/color-contrast" target="_blank" rel="noopener noreferrer" title="Deque Color Contrast Analyzer"> https://dequeuniversity.com/color-contrast</a>
+                                </p>
 
-<nav> 
-	<ul>
-	<li><a href="index.html" class="homePageLink">Home</a></li>
-	<li><a href="aboutme.html" class="aboutMeLink">About me</a></li>
-	<li><a href="contactme.html" class="contactMeLink">Contact me</a></li>
-	<li><a href="tools.html" class="toolsLink">Tools</a></li>
-	</ul> 
-		 
-</nav>
+                                <h2 class="sub-title">HTML Color Picker</h2>
+                                <p>
+                                    from the website https://www.w3schools.com/ <br />
+                                    <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank" rel="noopener noreferrer" title="HTML Color Picker"> https://www.w3schools.com/colors/colors_picker.asp</a>
+                                </p>
 
- 
+                                <h2 class="sub-title">The W3C Markup Validation Service for HTML</h2>
+                                <p>
+                                    is a color scheme generator that uses deep learning <br />
+                                    <a href="https://validator.w3.org/#validate_by_input" target="_blank" rel="noopener noreferrer" title="The W3C Markup Validation Service for HTML"> https://validator.w3.org/#validate_by_input</a>
+                                </p>
 
+                                <h2 class="sub-title">Notepad++</h2>
+                                <p>
+                                    Notepad++ is a text and source code editor for use with Microsoft Windows, supports FTP as well <br />
+                                    <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer" title="Notepad++">https://notepad-plus-plus.org/downloads/</a>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
 
-</div></div>
+                <!-- sidebar container -->
+                <aside>
+                    <div class="widget-holder">
+                        <div class="widget">
+                            <div class="widget-title">HTML</div>
+                            <div class="widget-inner">
+                                <p><img src="images/html.png" alt="html" /></p>
+                                <p><a href="tools.html#html-id"> More about HTML >>></a></p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="widget-holder">
+                        <div class="widget">
+                            <div class="widget-title">CSS</div>
+                            <div class="widget-inner">
+                                <p>
+                                    <img src="images/css.png" alt="css" />
+                                    <p></p>
+                                    <p><a href="tools.html#css-id"> More about CSS >>></a></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="webpage-wrapper">
-<main class="main-class">
- 
-<div class="article-holder"><div class="widget-holder"><div class="widget">	
-<!-- buttons for hide and show sidebar -->
-<button class="expandArticleArea">Expand Article Area?</button><button class="showSideBar">Show Side Bar?</button>
+                    <div class="widget-holder">
+                        <div class="widget">
+                            <div class="widget-title">JavaScript</div>
+                            <div class="widget-inner">
+                                <p>
+                                    <img src="images/javaScript.png" alt="javaScript" />
+                                    <p></p>
+                                    <p><a href="tools.html#javaScript-id"> More about JavaScript >>></a></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- Article content -->
-<article>
-<h1 class="article-title">Hello and Welcome!</h1> 
-<p>It is here that I log my development within the web development that I have passion for</p>
+                    <div class="widget-holder">
+                        <div class="widget">
+                            <div class="widget-title">jQuery</div>
+                            <div class="widget-inner">
+                                <p>
+                                    <img src="images/jquery.png" alt="jquery" />
+                                    <p></p>
+                                    <p><a href="tools.html#jQuery-id"> More about jquery >>></a></p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- sidebar container ends -->
+            </main>
+        </div>
+        <footer>
+            <div class="footer-inner">
+                <p>Pally Web is a personal development website about the web technologies.</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/sarnas-kadir-86935918/" target="_blank" rel="noopener noreferrer" title="linked in profile">https://www.linkedin.com/in/sarnas-kadir-86935918/</a></p>
 
+                <p>Personal website: <a href="https://zazakicomputer.com/" target="_blank" rel="noopener noreferrer" title="linked in profile">https://zazakicomputer.com/</a></p>
 
- 
-<h2 class="sub-title"> Colormind</h2> 
-<p>is a color scheme generator that uses deep learning <br> 
-<a href="http://colormind.io/" target='_blank' rel='noopener noreferrer' title="Colormind"> http://colormind.io/</a>
-</p>
- 
+                <p>Me GitHub: <a href="https://github.com/SarnasKadir" target="_blank" rel="noopener noreferrer" title="Me GitHub">https://github.com/SarnasKadir</a></p>
 
-<h2 class="sub-title">Deque Color Contrast Analyzer</h2> 
-<p>is a text and text background color contrast Ratio <br> 
-<a href="https://dequeuniversity.com/color-contrast" target='_blank' rel='noopener noreferrer' title="Deque Color Contrast Analyzer"> https://dequeuniversity.com/color-contrast</a> 
-</p>
+                <p>My Codecademy.com profile: <a href="https://www.codecademy.com/profiles/SARNAS" target="_blank" rel="noopener noreferrer" title="My Codecademy.com profile">https://www.codecademy.com/profiles/SARNAS</a></p>
 
-
-
-<h2 class="sub-title">HTML Color Picker</h2>
-<p>from the website https://www.w3schools.com/ <br> 
-<a href="https://www.w3schools.com/colors/colors_picker.asp" target='_blank' rel='noopener noreferrer' title="HTML Color Picker"> https://www.w3schools.com/colors/colors_picker.asp</a> 
-</p>
-
-
-<h2 class="sub-title">The W3C Markup Validation Service for HTML</h2> 
-<p>is a color scheme generator that uses deep learning <br> 
-<a href="https://validator.w3.org/#validate_by_input" target='_blank' rel='noopener noreferrer' title="The W3C Markup Validation Service for HTML"> https://validator.w3.org/#validate_by_input</a>  
-</p>
-
-
-
-<h2 class="sub-title">Notepad++</h2> 
-<p>Notepad++ is a text and source code editor for use with Microsoft Windows, supports FTP as well <br> 
-<a href="https://notepad-plus-plus.org/downloads/" target='_blank' rel='noopener noreferrer' title="Notepad++">https://notepad-plus-plus.org/downloads/</a>  
-</p>
-
-
-
-
-
-
-</article>
-</div></div></div> 
-
-<!-- sidebar container -->
-<aside> 
-<div class="widget-holder">	<div class="widget">
-<div class="widget-title">HTML</div>
-<div class="widget-inner">
-<p><img src="images/html.png" alt="html"></p>
-<p><a href="tools.html#html-id"> More about HTML >>></a></p>
-</div></div></div>
-
-<div class="widget-holder">	<div class="widget">
-<div class="widget-title">CSS</div>
-<div class="widget-inner">
-<p><img src="images/css.png" alt="css"><p>
-<p><a href="tools.html#css-id"> More about CSS >>></a></p>
-</div></div></div>
-
-<div class="widget-holder">	<div class="widget">
-<div class="widget-title">JavaScript</div>
-<div class="widget-inner">
-<p><img src="images/javaScript.png" alt="javaScript"><p>
-<p><a href="tools.html#javaScript-id"> More about JavaScript >>></a></p>
-</div></div></div>
-
-<div class="widget-holder">	<div class="widget">
-<div class="widget-title">jQuery</div>
-<div class="widget-inner">
-<p><img src="images/jquery.png" alt="jquery"><p>
-<p><a href="tools.html#jQuery-id"> More about jquery >>></a></p>
-</div></div></div>
-</aside><!-- sidebar container ends -->
-
-</main>
-</div>
-<footer>
-<div class="footer-inner"> 
- <p>Pally Web is a personal development website about the web technologies.</p> 
- <p>LinkedIn: <a href="https://www.linkedin.com/in/sarnas-kadir-86935918/" target='_blank' rel='noopener noreferrer' title="linked in profile">https://www.linkedin.com/in/sarnas-kadir-86935918/</a></p>
- 
- <p>Personal website: <a href="https://zazakicomputer.com/" target='_blank' rel='noopener noreferrer' title="linked in profile">https://zazakicomputer.com/</a></p>
- 
- <p>Me GitHub: <a href="https://github.com/SarnasKadir" target='_blank' rel='noopener noreferrer' title="Me GitHub">https://github.com/SarnasKadir</a></p>
- 
-  <p>My Codecademy.com profile: <a href="https://www.codecademy.com/profiles/SARNAS" target='_blank' rel='noopener noreferrer' title="My Codecademy.com profile">https://www.codecademy.com/profiles/SARNAS</a></p>
- 
- 
-  <p>MTA: <a href="https://www.credly.com/badges/48bdb39a-e507-45b7-8d2e-7b03768a5b2c" target='_blank' rel='noopener noreferrer' title="My Codecademy.com profile"> MTA: Introduction to Programming Using HTML and CSS</a></p>
- 
- 
-</div> 
-</footer>
-
-
-
-</body>
+                <p>MTA: <a href="https://www.credly.com/badges/48bdb39a-e507-45b7-8d2e-7b03768a5b2c" target="_blank" rel="noopener noreferrer" title="My Codecademy.com profile"> MTA: Introduction to Programming Using HTML and CSS</a></p>
+            </div>
+        </footer>
+    </body>
 </html>
