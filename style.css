@@ -514,15 +514,21 @@ footer {
 }
 
 .toTop{
-	width:48px;
-	height:48px;
-	position:fixed;
-	z-index:100;
-	bottom:100px;
-	 
+	float: right;
+	height: 48px;
+	width: 48px;
+	border: none;  
+    background-image: url("images/arroUp.png");
+    background-color:transparent;
+	 background-repeat: no-repeat;
+  background-size: 100%;
+  border:none;
+ 	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor:pointer;
+	display:none;
+	border:15px solid black;
 }
-.toTop img{
-	width:48px;
-	height:48px;
-	 
-}
+ 
+.bodyClass .toTop{display:block;}
