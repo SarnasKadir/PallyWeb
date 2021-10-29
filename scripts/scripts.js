@@ -20,7 +20,7 @@ $(document).ready(function () {
     }
 
     // if the window size is bigger than 1000px do stuff!
-    if ($(window).width() >= 1000) {
+   // if ($(window).width() >= 1000) {
         /* this function Vanilla javascript is, this function make the nav buttons stick on the top of the page when srolled */
         window.onscroll = function () {
             myFunction();
@@ -34,7 +34,7 @@ $(document).ready(function () {
                 navbar.classList.remove("bodyClass");
             }
         }
-    }
+   // }
 
     // if the window size is bigger than 800px do stuff!
     if ($(window).width() >= 800) {
