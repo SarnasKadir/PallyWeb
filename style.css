@@ -418,7 +418,7 @@ footer {
 }
 
 .menu-button-holderB .bar1 {
-	-ms-filter: "The rule you get from the website" -webkit-transform:rotate(45deg);
+ 
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
@@ -427,7 +427,7 @@ footer {
 }
 
 .menu-button-holderB .bar2 {
-	-ms-filter: "The rule you get from the website" -webkit-transform:rotate(-45deg);
+	 
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
