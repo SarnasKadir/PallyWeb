@@ -315,6 +315,8 @@ footer {
 	clear: both;
 }
 
+@media (max-width:800px){.widget-holder {padding:10px 0;}}
+
 .widget {
 	width: 100%;
 	height: auto;
@@ -329,6 +331,14 @@ footer {
 	padding: 5px 10px;
 }
 
+@media (max-width:800px){
+	.widget {border-width: 1px 0;
+		-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	}
+}
+
 .widget-title {
 	width: 100%;
 	height: auto;
@@ -338,6 +348,8 @@ footer {
 	border-style: solid;
 	font-weight: bold;
 }
+
+
 
 .widget-inner {
 	width: 100%;
@@ -359,6 +371,13 @@ footer {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 }
+
+@media (max-width:800px){
+	.widget-inner img{float:left;} 
+}
+
+aside .widget a{display:block;   float:left; width:100%;
+ clear:both;}
 
 .expandArticleArea,
 .showSideBar {
@@ -513,7 +532,7 @@ footer {
 	clear: both;
 }
 
-.toTop{
+#toTop{
 	float: right;
 	height: 48px;
 	width: 48px;
@@ -527,9 +546,9 @@ footer {
 	-moz-border-radius: 50%;
 	border-radius: 50%;
 	cursor:pointer;
-	display:none;
 	border:15px solid black;
+    visibility: hidden;
 }
  
-.bodyClass .toTop{display:block;}
-@media(max-width:1000px) {.bodyClass .toTop{display:block;}}
+ 
+ 

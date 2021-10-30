@@ -19,22 +19,7 @@ $(document).ready(function () {
         $("body").addClass("dark_Mode");
     }
 
-    // if the window size is bigger than 1000px do stuff!
-   // if ($(window).width() >= 1000) {
-        /* this function Vanilla javascript is, this function make the nav buttons stick on the top of the page when srolled */
-        window.onscroll = function () {
-            myFunction();
-        };
-        var navbar = document.getElementById("bodyId");
-        var sticky = document.getElementById("navbar").offsetTop;
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("bodyClass");
-            } else {
-                navbar.classList.remove("bodyClass");
-            }
-        }
-   // }
+   
 
     // if the window size is bigger than 800px do stuff!
     if ($(window).width() >= 800) {
@@ -59,4 +44,55 @@ $(document).ready(function () {
         $(".top-banner").toggleClass("top-bannerShowMenu");
         $("nav").toggle();
     });
+	
+//----------------------------------------------	
+ 
+	
+   
+window.onscroll = function () {
+	if ($(window).width() >= 1000) {pwStickyBanner(); }
+	pwToTop();
+};
+		
+
+ 
+ 
+ /* this function Vanilla javascript is, this function make the nav buttons stick on the top of the page when srolled */		
+	var navbar = document.getElementById("bodyId");
+	var sticky = document.getElementById("navbar").offsetTop;
+	function pwStickyBanner() {
+	if (window.pageYOffset >= sticky) {
+	navbar.classList.add("bodyClass");
+	} else {
+	navbar.classList.remove("bodyClass");
+	}
+	}
+
+ 
+
+
+    
+/* this function Vanilla javascript is, to top page function */	 	
+var wpTotop = document.getElementById("toTop");
+var wpToTopShow = document.getElementById("webpage-wrapper").offsetTop;
+	function pwToTop() {
+		
+		if (window.pageYOffset >= wpToTopShow) {
+			wpTotop.style.visibility = 'visible'
+		} else {
+			wpTotop.style.visibility = 'hidden'
+		}
+			
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+// Document ready ends 	
 });
+
